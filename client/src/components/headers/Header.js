@@ -58,7 +58,7 @@ function Header() {
             </div>
 
             <ul style={styleMenu}>
-                <li><Link to="/">{isLogged ? 'Hello ' + {name} : null}</Link></li>
+                <li><Link to="/">{ {isLogged} ? ('Hello '+{name}) : (null) }</Link></li>
                 <li><Link to="/">{isAdmin ? 'Products' : 'Shop'}</Link></li>
 
                 {isAdmin && adminRouter()}
