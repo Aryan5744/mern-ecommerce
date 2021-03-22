@@ -11,6 +11,7 @@ function Header() {
     const [isLogged] = state.userAPI.isLogged
     const [isAdmin] = state.userAPI.isAdmin
     const [cart] = state.userAPI.cart
+    const [name] = state.userAPI.name;
     const [menu, setMenu] = useState(false)
 
     const logoutUser = async () =>{
