@@ -17,6 +17,7 @@ function UserAPI(token) {
                     })
 
                     setIsLogged(true)
+                    setName(res.data.name)
                     res.data.role === 1 ? setIsAdmin(true) : setIsAdmin(false)
 
                     setCart(res.data.cart)
